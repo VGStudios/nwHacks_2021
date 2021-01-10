@@ -32,6 +32,11 @@
         <item>Reward your efforts</item>
         <item>Do not give up</item>
         <item>Watch a funny video :)</item>
+        <item>Connect with nature</item>
+        <item>Set attainable goals</item>
+        <item>Try to create a routine</item>
+        <item>Spend time with loved ones</item>
+        <item>Consider clinical treatment</item>
     </string-array>
 
     <string-array name="tips_anxiety">
@@ -42,6 +47,11 @@
         <item>Stay away from sugar</item>
         <item>Practice calm, deep breathing</item>
         <item>Watch a funny video :)</item>
+        <item>Accept that you cannot control everything</item>
+        <item>Set small daily goals</item>
+        <item>Help out in your community</item>
+        <item>Be the boss of your thoughts</item>
+        <item>Figure out what is bothering you</item>
     </string-array>
 
     <string-array name ="checklist">
@@ -60,6 +70,7 @@
         <item>Eat healthy fats such as Avocados or nuts</item>
         <item>Do 10 pushups</item>
         <item>Practice stretching for 5 minutes</item>
+        <item>Read a good book</item>
     </string-array>
 
 </resources>
