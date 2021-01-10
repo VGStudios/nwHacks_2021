@@ -3,6 +3,7 @@ package com.example.nwhacks_2021;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -61,8 +62,13 @@ public class GiveTips extends AppCompatActivity {
         adapter = new RecyclerAdapter(list);
         recyclerView.setHasFixedSize(false);
         recyclerView.setAdapter(adapter);
+        recyclerView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
+
+        TextView header = (TextView) findViewById(R.id.textView);
+        header.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
 
         Button nextPageBtn1 = (Button) findViewById(R.id.nextPageBtn1);
+        nextPageBtn1.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
         //button implementation from tips to todo
         nextPageBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
