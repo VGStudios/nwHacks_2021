@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 public class OpenScreen extends AppCompatActivity {
     public ImageView openingimage;
-    public static int openingEnd=4000;
+    public static int openingEnd=3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

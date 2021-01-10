@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         TextView view2 = (TextView) findViewById(R.id.textView2);
         TextView view3 = (TextView) findViewById(R.id.textView3);
 
-        view.setVisibility(View.INVISIBLE);
-        view2.setVisibility(View.INVISIBLE);
-        view3.setVisibility(View.INVISIBLE);
+        view.setText("");
+        view2.setText("");
+        view3.setText("");
 
 
         Spinner mySpinner1 = (Spinner) findViewById(R.id.spinner1);
@@ -42,12 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 parentView.getItemAtPosition(position);
                 spinner1[0] = mySpinner1.getSelectedItem().toString();
                 view.setText(spinner1[0]);
-                view.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
-                // your code here
+                view.setText("");
             }
 
         });
@@ -65,12 +65,11 @@ public class MainActivity extends AppCompatActivity {
                 parentView.getItemAtPosition(position);
                 spinner2[0] = mySpinner2.getSelectedItem().toString();
                 view2.setText(spinner2[0]);
-                view2.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
-                // your code here
+                view2.setText("");
             }
 
         });
@@ -88,12 +87,11 @@ public class MainActivity extends AppCompatActivity {
                 parentView.getItemAtPosition(position);
                 spinner3[0] = mySpinner3.getSelectedItem().toString();
                 view3.setText(spinner3[0]);
-                view3.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
-                // your code here
+                view3.setText("");
             }
 
         });
@@ -112,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        TextView appName = (TextView) findViewById(R.id.appName);
+        appName.startAnimation(AnimationUtils.loadAnimation(this, R.anim.textfadein));
     }
 
     public boolean depressionOrAnxiety (String[] selectedSymptoms, ArrayList<String> depression, ArrayList<String> anxiety) {
