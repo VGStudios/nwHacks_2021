@@ -9,8 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class GiveTips extends AppCompatActivity {
 
@@ -30,10 +32,22 @@ public class GiveTips extends AppCompatActivity {
 
         if (outcome) {
             // Depression
-            list = Arrays.asList(getResources().getStringArray(R.array.tips_depression));
+            String[] array = getResources().getStringArray(R.array.tips_depression);
+            String randomStr;
+            list = new ArrayList<String>();
+            for (int i = 0; i < 3; i++) {
+                randomStr = array[new Random().nextInt(array.length)];
+                list.add(randomStr);
+            }
         } else {
             // Anxiety
-            list = Arrays.asList(getResources().getStringArray(R.array.tips_anxiety));
+            String[] array = getResources().getStringArray(R.array.tips_anxiety);
+            String randomStr;
+            list = new ArrayList<String>();
+            for (int i = 0; i < 3; i++) {
+                randomStr = array[new Random().nextInt(array.length)];
+                list.add(randomStr);
+            }
         }
         adapter = new RecyclerAdapter(list);
         recyclerView.setHasFixedSize(false);
