@@ -41,4 +41,22 @@
         <item>Watch a funny video :)</item>
     </string-array>
 
+    <string-array name ="checklist">
+        <item>Eat a healthy breakfast</item>
+        <item>Drink 2L of water to stay hydrated</item>
+        <item>Go for a 15 minute walk</item>
+        <item>Sleep 7-9 hours</item>
+        <item>Go to the gym for 30 minutes</item>
+        <item>Practice meditation for 10 minutes</item>
+        <item>Refrain from eating/buying junk food this week</item>
+        <item>Message/talk to a friend</item>
+        <item>Go to bed 30 minutes earlier</item>
+        <item>Make an effort to improve your posture</item>
+        <item>Drink green tea</item>
+        <item>Reduce alcohol consumption</item>
+        <item>Eat healthy fats such as Avocados or nuts</item>
+        <item>Do 10 pushups</item>
+        <item>Practice stretching for 5 minutes</item>
+    </string-array>
+
 </resources>
