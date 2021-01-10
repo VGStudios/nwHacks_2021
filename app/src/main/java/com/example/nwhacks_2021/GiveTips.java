@@ -26,7 +26,7 @@ public class GiveTips extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        list = Arrays.asList(getResources().getStringArray(R.array.android_versions));
+        list = Arrays.asList(getResources().getStringArray(R.array.tips));
         adapter = new RecyclerAdapter(list);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
