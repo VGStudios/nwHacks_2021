@@ -20,6 +20,7 @@
         android:padding="16sp"
         android:text="@string/great_job_n_nthank_you_for_taking_the_effort_to_improve_yourself"
         android:textSize="36sp"
+        android:textColor="#493D3D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
