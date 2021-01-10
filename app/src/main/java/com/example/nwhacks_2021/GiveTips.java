@@ -1,7 +1,10 @@
 package com.example.nwhacks_2021;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -52,6 +55,17 @@ public class GiveTips extends AppCompatActivity {
         adapter = new RecyclerAdapter(list);
         recyclerView.setHasFixedSize(false);
         recyclerView.setAdapter(adapter);
+
+        Button nextPageBtn1 = (Button) findViewById(R.id.nextPageBtn1);
+        //button implementation from tips to todo
+        nextPageBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // If outcome is true, display Depression tips, else display Anxiety tips
+                Intent i = new Intent(GiveTips.this, Checklist.class);
+                startActivity(i);
+            }
+        });
 
 
     }
