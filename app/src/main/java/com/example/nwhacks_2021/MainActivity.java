@@ -18,18 +18,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+        Spinner mySpinner1 = (Spinner) findViewById(R.id.spinner1);
         final String[] spinner1 = new String[1];
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.symptoms));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinner.setAdapter(myAdapter);
-        mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        mySpinner1.setAdapter(myAdapter);
+        mySpinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 parentView.getItemAtPosition(position);
-                spinner1[0] = mySpinner.getSelectedItem().toString();
+                spinner1[0] = mySpinner1.getSelectedItem().toString();
                 TextView view = (TextView) findViewById(R.id.textView);
                 view.setText(spinner1[0]);
             }
