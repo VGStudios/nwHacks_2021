@@ -15,14 +15,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 public class GiveTips extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
-    private List<String> list;
+    private Set<String> list;
     private RecyclerAdapter adapter;
 
     @Override
@@ -38,28 +40,26 @@ public class GiveTips extends AppCompatActivity {
             // Depression
             String[] array = getResources().getStringArray(R.array.tips_depression);
             String randomStr;
-            list = new ArrayList<String>();
+            list = new HashSet<>();
             for (int i = 0; i < 3; i++) {
                 randomStr = array[new Random().nextInt(array.length)];
-                while(list.contains(randomStr)) {
+                while(!list.add(randomStr)) {
                     randomStr = array[new Random().nextInt(array.length)];
                 }
-                list.add(randomStr);
             }
         } else {
             // Anxiety
             String[] array = getResources().getStringArray(R.array.tips_anxiety);
             String randomStr;
-            list = new ArrayList<String>();
+            list = new HashSet<>();
             for (int i = 0; i < 3; i++) {
                 randomStr = array[new Random().nextInt(array.length)];
-                while(list.contains(randomStr)) {
+                while(!list.add(randomStr)) {
                     randomStr = array[new Random().nextInt(array.length)];
                 }
-                list.add(randomStr);
             }
         }
-        adapter = new RecyclerAdapter(list);
+        adapter = new RecyclerAdapter(new ArrayList<>(list));
         recyclerView.setHasFixedSize(false);
         recyclerView.setAdapter(adapter);
         recyclerView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
