@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">nwHacks_2021</string>
+
+    <string-array name="symptoms">
+        <item>Feeling restless, wound-up, or on-edge</item>
+        <item>Being easily fatigued</item>
+        <item>Having difficulty concentrating; mind going blank</item>
+        <item>Being irritable</item>
+        <item>Having muscle tension</item>
+        <item>Difficulty controlling feelings of worry</item>
+        <item>Feelings of guilt, worthlessness, and helplessness</item>
+        <item>Pessimism and hopelessness</item>
+        <item>Insomnia or sleeping too much</item>
+        <item>Loss of interest in things once pleasurable</item>
+        <item>Overeating, or appetite loss</item>
+        <item>Digestive problems that don\'t get better</item>
+        <item>Persistent sad, anxious, or empty feelings</item>
+        <item>Aches, pains, headaches, or cramps that won\'t go away</item>
+        <item>Suicidal thoughts or attempts</item>
+    </string-array>
+
 </resources>

@@ -15,7 +15,7 @@ public class Depression {
         String[] sym = new String[] {"Feeling restless, wound-up, or on-edge", "Being easily fatigued",
                 "Having difficulty concentrating; mind going blank", "Being irritable",
                 "Feelings of guilt, worthlessness, and helplessness", "Pessimism and hopelessness",
-                "Insomnia, early-morning wakefulness, or sleeping too much", "Loss of interest in things once pleasurable",
+                "Insomnia or sleeping too much", "Loss of interest in things once pleasurable",
                 "Overeating, or appetite loss", "Aches, pains, headaches, or cramps that won't go away",
                 "Digestive problems that don't get better, even with treatment", "Persistent sad, anxious, or empty feelings",
                 "Suicidal thoughts or attempts"};
