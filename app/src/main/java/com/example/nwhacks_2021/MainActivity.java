@@ -89,16 +89,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        String[] selectedSymptoms = new String[] {spinner1[0], spinner2[0], spinner3[0]};
-        Depression d = new Depression();
-        Anxiety a = new Anxiety();
-        boolean outcome = depressionOrAnxiety(selectedSymptoms, d.getList(), a.getList());
-        // If outcome is true, display Depression tips, otherwise display Anxiety tips
-
         Button nextPageBtn = (Button) findViewById(R.id.nextPageBtn);
         nextPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String[] selectedSymptoms = new String[] {spinner1[0], spinner2[0], spinner3[0]};
+                Depression d = new Depression();
+                Anxiety a = new Anxiety();
+                boolean outcome = depressionOrAnxiety(selectedSymptoms, d.getList(), a.getList());
+                // If outcome is true, display Depression tips, else display Anxiety tips
                 Intent i = new Intent(MainActivity.this, GiveTips.class );
                 i.putExtra("outcome", outcome);
                 startActivity(i);
