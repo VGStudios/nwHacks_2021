@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
     }
 
     public boolean depressionOrAnxiety (String[] selectedSymptoms, ArrayList<String> depression, ArrayList<String> anxiety) {
@@ -116,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 anx++;
             }
         }
-        return (depr >= anx);
+        return (depr > anx);
     }
 }
 
