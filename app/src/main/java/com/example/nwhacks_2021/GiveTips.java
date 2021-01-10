@@ -40,6 +40,9 @@ public class GiveTips extends AppCompatActivity {
             list = new ArrayList<String>();
             for (int i = 0; i < 3; i++) {
                 randomStr = array[new Random().nextInt(array.length)];
+                while(list.contains(randomStr)) {
+                    randomStr = array[new Random().nextInt(array.length)];
+                }
                 list.add(randomStr);
             }
         } else {
@@ -49,6 +52,9 @@ public class GiveTips extends AppCompatActivity {
             list = new ArrayList<String>();
             for (int i = 0; i < 3; i++) {
                 randomStr = array[new Random().nextInt(array.length)];
+                while(list.contains(randomStr)) {
+                    randomStr = array[new Random().nextInt(array.length)];
+                }
                 list.add(randomStr);
             }
         }

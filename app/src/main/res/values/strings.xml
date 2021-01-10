@@ -9,6 +9,10 @@
         <item>Having difficulty concentrating; mind going blank</item>
         <item>Being irritable</item>
         <item>Having muscle tension</item>
+        <item>Suicidal thoughts or attempts</item>
+        <item>Increased or heavy sweating</item>
+        <item>Feelings of danger, panic, or dread</item>
+        <item>Obsessions about certain ideas, a sign of OCD</item>
         <item>Difficulty controlling feelings of worry</item>
         <item>Feelings of guilt, worthlessness, and helplessness</item>
         <item>Pessimism and hopelessness</item>
@@ -18,7 +22,6 @@
         <item>Digestive problems that don\'t get better</item>
         <item>Persistent sad, anxious, or empty feelings</item>
         <item>Aches, pains, headaches, or cramps that won\'t go away</item>
-        <item>Suicidal thoughts or attempts</item>
     </string-array>
 
     <string-array name="tips_depression">

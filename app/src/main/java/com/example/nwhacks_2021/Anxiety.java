@@ -16,7 +16,8 @@ public class Anxiety {
         String[] sym = new String[] {"Feeling restless, wound-up, or on-edge", "Being easily fatigued",
                                     "Having difficulty concentrating; mind going blank", "Being irritable",
                                     "Having muscle tension", "Difficulty controlling feelings of worry",
-                                    "Insomnia or sleeping too much"};
+                                    "Insomnia or sleeping too much", "Feelings of danger, panic, or dread",
+                                    "Increased or heavy sweating", "Obsessions about certain ideas, a sign of OCD"};
         for (String s: sym) {
             symptoms.add(s);
         }
