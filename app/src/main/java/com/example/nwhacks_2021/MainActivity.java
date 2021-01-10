@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 parentView.getItemAtPosition(position);
                 spinner1[0] = mySpinner1.getSelectedItem().toString();
                 view.setText(spinner1[0]);
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
             }
 
             @Override
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 parentView.getItemAtPosition(position);
                 spinner2[0] = mySpinner2.getSelectedItem().toString();
                 view2.setText(spinner2[0]);
+                view2.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
             }
 
             @Override
@@ -90,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
                 parentView.getItemAtPosition(position);
                 spinner3[0] = mySpinner3.getSelectedItem().toString();
                 view3.setText(spinner3[0]);
+                view3.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.textfadein));
+
             }
 
             @Override
