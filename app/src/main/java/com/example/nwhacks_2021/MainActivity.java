@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Spinner mySpinner1 = (Spinner) findViewById(R.id.spinner1);
+        mySpinner1.startAnimation(AnimationUtils.loadAnimation(this, R.anim.textfadein));
         final String[] spinner1 = new String[1];
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Spinner mySpinner2 = (Spinner) findViewById(R.id.spinner2);
+        mySpinner2.startAnimation(AnimationUtils.loadAnimation(this, R.anim.textfadein));
         final String[] spinner2 = new String[1];
 
         ArrayAdapter<String> myAdapter2 = new ArrayAdapter<String>(MainActivity.this,
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Spinner mySpinner3 = (Spinner) findViewById(R.id.spinner3);
+        mySpinner3.startAnimation(AnimationUtils.loadAnimation(this, R.anim.textfadein));
         final String[] spinner3 = new String[1];
 
         ArrayAdapter<String> myAdapter3 = new ArrayAdapter<String>(MainActivity.this,

@@ -63,6 +63,7 @@
         android:layout_marginLeft="53dp"
         android:layout_marginEnd="170dp"
         android:layout_marginRight="170dp"
+        android:layout_marginBottom="20dp"
         android:text="CheckBox"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
