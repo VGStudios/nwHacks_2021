@@ -23,22 +23,21 @@ public class GiveTips extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
-        Boolean outcome = getIntent().getBooleanExtra("outcome", true);
+        boolean outcome = getIntent().getBooleanExtra("outcome", true);
         recyclerView = findViewById(R.id.recyclerview);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
         if (outcome) {
             // Depression
-            list = Arrays.asList(getResources().getStringArray(R.array.tips));
+            list = Arrays.asList(getResources().getStringArray(R.array.tips_depression));
         } else {
             // Anxiety
-            list = Arrays.asList(getResources().getStringArray(R.array.tips));
+            list = Arrays.asList(getResources().getStringArray(R.array.tips_anxiety));
         }
         adapter = new RecyclerAdapter(list);
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(false);
         recyclerView.setAdapter(adapter);
-
-
 
 
     }
