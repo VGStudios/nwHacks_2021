@@ -18,7 +18,7 @@
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:padding="16sp"
-        android:text="Great Job! \n\nThank you for taking the effort to improve yourself :)  "
+        android:text="@string/great_job_n_nthank_you_for_taking_the_effort_to_improve_yourself"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

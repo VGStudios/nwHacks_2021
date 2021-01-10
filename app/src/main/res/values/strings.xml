@@ -2,6 +2,7 @@
     <string name="app_name">nwHacks_2021</string>
     <string name="tips">Based on your responses, here are some suggestions:</string>
     <string name="hello">Hello</string>
+    <string name="great_job_n_nthank_you_for_taking_the_effort_to_improve_yourself">Great Job! Thank you for taking the effort to improve yourself :)</string>
 
     <string-array name="symptoms">
         <item>Feeling restless, wound-up, or on-edge</item>
