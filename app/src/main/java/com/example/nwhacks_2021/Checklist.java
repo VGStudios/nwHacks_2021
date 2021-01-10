@@ -1,6 +1,9 @@
 package com.example.nwhacks_2021;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,5 +49,13 @@ public class Checklist extends AppCompatActivity {
         }
         c4.setText(item);
 
+        Button nextPageBtn2 = (Button) findViewById(R.id.nextPageBtn2);
+        nextPageBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Checklist.this, EndPage.class);
+                startActivity(i);
+            }
+        });
     }
 }
