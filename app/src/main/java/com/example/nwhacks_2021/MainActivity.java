@@ -20,6 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        TextView view = (TextView) findViewById(R.id.textView);
+        TextView view2 = (TextView) findViewById(R.id.textView2);
+        TextView view3 = (TextView) findViewById(R.id.textView3);
+
+        view.setVisibility(View.INVISIBLE);
+        view2.setVisibility(View.INVISIBLE);
+        view3.setVisibility(View.INVISIBLE);
+
+
         Spinner mySpinner1 = (Spinner) findViewById(R.id.spinner1);
         final String[] spinner1 = new String[1];
 
@@ -32,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 parentView.getItemAtPosition(position);
                 spinner1[0] = mySpinner1.getSelectedItem().toString();
-                TextView view = (TextView) findViewById(R.id.textView);
                 view.setText(spinner1[0]);
+                view.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -55,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 parentView.getItemAtPosition(position);
                 spinner2[0] = mySpinner2.getSelectedItem().toString();
-                TextView view2 = (TextView) findViewById(R.id.textView2);
                 view2.setText(spinner2[0]);
+                view2.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -78,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 parentView.getItemAtPosition(position);
                 spinner3[0] = mySpinner3.getSelectedItem().toString();
-                TextView view3 = (TextView) findViewById(R.id.textView3);
                 view3.setText(spinner3[0]);
+                view3.setVisibility(View.VISIBLE);
             }
 
             @Override
