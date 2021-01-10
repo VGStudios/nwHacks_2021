@@ -104,6 +104,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button nextPageBtn1 = (Button) findViewById(R.id.nextPageBtn1);
+        //button implementation from tips to todo
+
+
+
+
+
     }
 
     public boolean depressionOrAnxiety (String[] selectedSymptoms, ArrayList<String> depression, ArrayList<String> anxiety) {
