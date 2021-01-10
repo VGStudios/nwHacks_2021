@@ -27,6 +27,7 @@ public class GiveTips extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
         if (outcome) {
             // Depression
             list = Arrays.asList(getResources().getStringArray(R.array.tips_depression));
@@ -35,10 +36,8 @@ public class GiveTips extends AppCompatActivity {
             list = Arrays.asList(getResources().getStringArray(R.array.tips_anxiety));
         }
         adapter = new RecyclerAdapter(list);
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(false);
         recyclerView.setAdapter(adapter);
-
-
 
 
     }

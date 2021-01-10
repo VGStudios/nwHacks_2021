@@ -20,19 +20,22 @@
         <item>Aches, pains, headaches, or cramps that won\'t go away</item>
         <item>Suicidal thoughts or attempts</item>
     </string-array>
+
     <string-array name="tips_depression">
         <item>Practice calm, deep breathing</item>
-        <item>Go for a quick walk</item>
         <item>Try to keep up with social activities</item>
         <item>Try to have a good sleep hygiene</item>
         <item>Learn to stop having negative thoughts</item>
-        <item>Reduce your stress</item>
+        <item>Reward your efforts</item>
+        <item>Do not give up</item>
         <item>Watch a funny video :)</item>
     </string-array>
+
     <string-array name="tips_anxiety">
         <item>Keep up a good diet</item>
-        <item>Practice Meditation</item>
-        <item>Go for a quick walk</item>
+        <item>Do your best</item>
+        <item>Maintain a positive attitude</item>
+        <item>Ease up on caffeine and/or alcohol</item>
         <item>Stay away from sugar</item>
         <item>Practice calm, deep breathing</item>
         <item>Watch a funny video :)</item>
