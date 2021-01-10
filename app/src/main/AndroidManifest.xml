@@ -19,7 +19,7 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".GiveTips"></activity>
         <activity android:name=".Checklist"></activity>
-
+        <activity android:name=".EndPage"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
