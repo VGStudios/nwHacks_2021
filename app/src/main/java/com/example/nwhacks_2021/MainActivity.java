@@ -2,10 +2,12 @@ package com.example.nwhacks_2021;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -92,6 +94,16 @@ public class MainActivity extends AppCompatActivity {
         Anxiety a = new Anxiety();
         boolean outcome = depressionOrAnxiety(selectedSymptoms, d.getList(), a.getList());
         // If outcome is true, display Depression tips, otherwise display Anxiety tips
+
+        Button nextPageBtn = (Button) findViewById(R.id.nextPageBtn);
+        nextPageBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, GiveTips.class );
+                i.putExtra("outcome", outcome);
+                startActivity(i);
+            }
+        });
 
     }
 
